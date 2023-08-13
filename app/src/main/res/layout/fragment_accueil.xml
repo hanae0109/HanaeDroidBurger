@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".accueil.AccueilFragment">
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="200dp"
+        android:autofillHints=""
+        android:background="@drawable/background_boutton"
+        android:hint="@string/enter_your_firstname"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_boutton"
+        android:hint="@string/enter_lastname"
+        android:paddingLeft="20dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_boutton"
+        android:hint="@string/enter_address"
+        android:paddingLeft="20dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/background_boutton"
+        android:hint="@string/enter_phone"
+        android:inputType="phone"
+        android:paddingLeft="20dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+    <Spinner
+        android:id="@+id/spinnerBurger"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/burger_list"
+        android:hint="@string/select_burger"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextDeliveryTime"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_boutton"
+        android:focusable="false"
+        android:hint="@string/delivery_time"
+        android:inputType="none"
+        android:paddingLeft="20dp"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBurger" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_boutton"
+        android:text="@string/create_order"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDeliveryTime" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Bienvenue chez"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="159dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/hanaedroidburger_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
