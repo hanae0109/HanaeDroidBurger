@@ -121,7 +121,7 @@
         android:layout_height="94dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/hanaedroidburger_logo"
+        android:src="@drawable/logo_hdb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
